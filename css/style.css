@@ -1,0 +1,588 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+    font-family: 'open-sans';
+}
+
+html,body{
+	height: 100%;
+}
+
+@font-face{
+	src:url('../fonts/OpenSans-Light.ttf');
+	font-family: "Open Sans";
+}
+
+.clear{
+    clear: both;
+}
+
+/* menu */
+
+header.sessao1{
+    width: 100%;
+    background-color: rgb(60, 90, 130);
+	height: 800px;
+    z-index: 2;
+} 
+
+.apresentacao{
+    width: 100%;
+	padding: 20px 2%;
+}
+
+.side_bar{
+    z-index: 1;
+    position: relative ;
+    top: 0;
+    right: -1px;
+    width: 100%;
+    height: 5em;
+    display: flex;
+    align-items: center;
+    justify-content: center 
+}
+
+.guia nav ul li{
+    float: left;
+    padding: 0 50px;
+    list-style-type: none;
+} 
+
+.guia nav ul li a:hover{
+    color: aqua;
+}
+
+.guia nav ul li a{
+    text-decoration: none;
+    font-family: 'open-sans';
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+} 
+
+.fixar {
+    position:fixed;
+    margin-top: 0px !important;
+    background-color: #32a899; 
+}
+
+/* menu */
+
+/* menu mobile */
+
+.mobile-menu{
+    float: right;
+	cursor: pointer;
+	display: none;
+	width: 32px;
+	height: 32px;
+	background-image: url('../img/menu.png');
+	background-size: 100% 100%;
+}
+
+.mobile-menu ul{
+    display: none;
+	background-color: #55b5e6;
+	position: absolute;
+	width: 100%;
+	left: 0;
+	top: 80px;
+	list-style-type: none;
+	text-align: center;
+}
+
+.mobile-menu ul li{
+	padding:8px 0;
+	transition: 0.4s;
+}
+
+.mobile-menu ul li:hover{
+	background-color: rgb(230,230,230);
+}
+
+.mobile-menu ul li a{
+	color:white;
+	display: block;
+	text-decoration: none;
+}
+
+.mobile-menu nav ul li a:hover{
+    color: aqua;
+}
+
+/* menu mobile */
+
+/* animamaçao de escrever */
+
+.typing {
+    font-family: 'open-sans';
+    width: 100%;
+    height: 350px;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background: rgb(64, 156, 184);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) 
+}
+
+
+#text{
+    font-size: 80px;
+    font-style: impact;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    color: #05dfeb;
+}
+
+.bar{
+    animation: animate 0.5s infinite linear;
+    font-size: 100px;
+    font-style: impact;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 900;
+    color: #05dfeb;
+}
+
+@keyframes animate{
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
+
+/* animamaçao de escrever */
+
+/* vantagens */
+
+.sessao2{
+    background-color:rgb(70, 136, 194);
+    width: 100%;
+    height: 400px;
+}
+
+.apoio{
+    position: relative;
+    top: 25%;
+    height: 10em;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.servicos{
+    width: 100%;
+    height: 400px;
+    padding: 15px 2%;
+    margin: 0 auto;
+}
+
+.bolas_conteudo{
+    margin: 0;
+    padding: 0 50px;
+}
+
+.bolas_conteudo img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* vantagens */
+
+/* slide vantagens */
+
+.sessao3{
+	width: 100%; 
+}
+
+.part2{
+	float: left;
+	width: 100%;
+    height: 500px;
+	padding:90px;
+	background: #4287f5;
+    align-items: center;
+}
+
+.scrollEquipe{
+	padding-left: 20px;
+	overflow: hidden;
+}
+
+.scroll-wraper{
+	width: 100%;
+}
+
+.sobre-autor{
+	float: left;
+	width: 100%;
+    height: 250px;
+	padding:0 30px;
+    align-items: center;
+}
+
+.titulo-autor{
+	float: left;
+	width: 100%;
+}
+
+.titulo-autor .img-autor img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 40px;
+    margin: 0 auto;
+	width: 50%;
+	height:250px;
+	background-color: transparent;
+}
+
+.slider-bullets{
+	width: 100%;
+	float: left;
+	padding-left: 48%;
+	margin-top:30px;
+}
+
+.slider-bullets span{
+    position: relative;
+    display: flex; 
+	width: 16px;
+	height: 16px;
+	float: left;
+	margin-right: 8px;
+	cursor: pointer;
+	border-radius: 8px;
+	background-color: rgb(200,200,200);
+}
+
+/* slide vantagens */
+
+/* sobre */
+
+.sessao4{
+    width: 100%;
+    height: 500px;
+    text-align: center;
+    padding: 0 20px;
+    background-color: #2aaeb5;
+}
+
+.sessao4 img{
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+}
+
+.bloco_de_msn{
+    position: relative;
+    top: 30%;
+    height: 10em;
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 2%;
+}
+
+.msn h3 p{
+    margin: 0;
+}
+
+/* sobre */
+
+/* footer / contato*/
+
+.sessao5{
+    background-color: #bce1e3;
+    width: 100%;
+    height: 650px;
+    text-align: center;
+    padding: 0 480px;
+}
+
+.texto{
+ color: rgb(105, 122, 120);
+ font-weight: 400;
+ margin-bottom: 15px;
+}
+
+.bg{
+    width: 100%;
+}
+
+.form{
+    float: left;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    height: 380px;
+    padding:20px 2%; 
+    border: 3px solid #cccccc;
+}
+
+.form input[type=text]{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    padding-left: 8px;
+    border: 1px solid #cccccc;
+    margin-bottom: 35px;
+}
+
+.form input[type=submit]{
+    position: relative;
+    width: 80%;
+    height: 48px;
+    cursor: pointer;
+    border-radius: 25px;
+    max-height: 100px;
+    background-color: aquamarine;
+    line-height: 24px;
+    margin-bottom: 10px;
+    border-style: none;
+    object-position: center;
+}
+
+.links{
+    float: right;
+    position: relative;
+    top: 40px;
+    width: 100%;
+    height: 40px;
+}
+
+/* footer / contato */
+
+@media screen and (max-width:1100px) {
+
+    .sessao5{
+        padding: 0 380px;
+    }
+
+    #text{
+        font-size: 40px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+    
+    .bar{
+        animation: animate 0.5s infinite linear;
+        font-size: 50px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+}
+
+@media screen and (max-width:1029) {
+    .sessao5{
+        padding: 0 280px;
+    }
+}
+
+@media screeen and (max-width:1000px){
+
+    .sessao5{
+        padding: 0 180px;
+    }
+
+    #text{
+        font-size: 40px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+    
+    .bar{
+        animation: animate 0.5s infinite linear;
+        font-size: 50px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+} 
+
+@media screen and (max-width: 800px) {
+        .sessao5{
+        padding: 0 100px;
+    }
+}
+
+
+@media screen and (max-width: 700px) {
+
+    .sessao5{
+        padding: 0 100px;
+    }
+
+    .side_bar{
+        display: none;
+    }
+
+    .mobile-menu{
+        display: block;
+    }
+
+    header.sessao1{
+        width: 100%;
+        background-color: rgb(60, 90, 130);
+        height:600px;
+    } 
+
+    .typing { 
+        font-family: 'open-sans';
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        background: rgb(64, 156, 184);
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%) 
+    }
+
+
+
+    #text{
+        font-size: 40px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+    
+    .bar{
+        animation: animate 0.5s infinite linear;
+        font-size: 50px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+
+    .sessao2{
+        background-color:rgb(70, 136, 194);
+        width: 100%;
+        height: 400px;
+    }
+    
+    .apoio{
+        position: relative;
+        top: 25%;
+        height: 10em;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .servicos{
+        width: 100%;
+        height: 400px;
+        padding: 15px 2%;
+        margin: 0 auto;
+    }
+    
+    .bolas_conteudo{
+        float: right;
+        margin: 0;
+        padding: 0 50px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .bolas_conteudo img{
+        width: 100px;
+        height: 100px;
+        border-radius: 50px;
+    }
+
+    .part2{
+        padding: 60px;
+        height: 400px;
+    }
+
+}
+
+
+@media screen and (max-width:580px){
+
+    .sessao5{
+        padding: 0 100px;
+    }
+
+    .bolas_conteudo{
+        display: block;
+        margin: 0;
+        padding: 0 2%;
+    }
+}
+
+@media screen and  (max-width:490px){
+
+    .sessao5{
+        padding: 0 70px;
+    }
+
+    header.sessao1{
+        width: 100%;
+        background-color: rgb(60, 90, 130);
+        height:600px;
+    } 
+
+    .typing { 
+        font-family: 'open-sans';
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: center; 
+        align-items: center; 
+        background: rgb(64, 156, 184);
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%) 
+    }
+
+    #text{
+        font-size: 30px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+    
+    .bar{
+        animation: animate 0.5s infinite linear;
+        font-size: 30px;
+        font-style: impact;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 900;
+        color: #05dfeb;
+    }
+
+
+    
+    .bolas_conteudo{
+        display: block;
+        margin: 0;
+        padding: 0 15px;
+    }
+}
+
+
+
