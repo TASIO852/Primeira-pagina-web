@@ -53,4 +53,45 @@ $(function(){
     // .match();  me retorna uma parte da string por uma RegExp
     // document.getElementById("demo").innerHTML = res;
 
+    
+$('.form').submit(function(){
+    var erro = false;
+    var Nome = $('input[name=Nome]').val();
+    var Telefone = $('input[name=Telefone]').val();
+    var Email = $('input[name=Email]').val();
+    resetForm();
+
+    if(nome == ''){
+        erro = true;
+        var el = $('input[name=Nome]');
+        el.parent().find('span').html('coloca nome');
+        el.css('border','2px solid red');
+    }
+    if(email == ''){
+        erro = true;
+        var el = $('input[name=Nome]');
+        el.parent().find('span').html('coloca email');
+        el.css('border','2px solid red');
+    }
+    if(telefone){
+        erro = true;
+        var el = $('input[name=Nome]');
+        el.parent().find('span').html('coloca telefone');
+        el.css('border','2px solid red');
+    }
+    if(erro == false){
+        $('.box').fadein(function(){
+            setTimeout(function(){
+                $('.box').fadeOut();
+            },5000);
+        });
+        $(this)[0].reset();
+    }
+    return false;
+    function resetForm(){
+        $('input[type=text]').css('border','1px solid #ccc');
+        $('span').html(' ')
+    }
+    })
 })
+
