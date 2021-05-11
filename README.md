@@ -1,2 +1,2 @@
 # minha_pagina
-uma pagina que criei para medir meus conhecimentos front-end 
+Uma pagina que criei para medir meus conhecimentos front-end 
